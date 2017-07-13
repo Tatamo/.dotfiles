@@ -113,4 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source ~/.nvm/nvm.sh
+# nvm
+if [[ -s ~/.nvm/nvm.sh ]]; then
+	source ~/.nvm/nvm.sh
+fi
+
