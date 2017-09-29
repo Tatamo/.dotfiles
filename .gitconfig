@@ -3,4 +3,4 @@
 	email = nsorder@gmail.com
 [core]
 	editor = vim
-	excludesfile = /home/tatamo/.gitignore
+	excludesfile = /home/${USERNAME}/.gitignore
