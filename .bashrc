@@ -118,3 +118,8 @@ if [[ -s ~/.nvm/nvm.sh ]]; then
 	source ~/.nvm/nvm.sh
 fi
 
+# rvm
+if [[ -s ~/.rvm/scripts/rvm ]]; then
+	source ~/.rvm/scripts/rvm
+fi
+
