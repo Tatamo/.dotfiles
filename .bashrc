@@ -118,8 +118,6 @@ if [[ -s ~/.nvm/nvm.sh ]]; then
 	source ~/.nvm/nvm.sh
 fi
 
-# rvm
-if [[ -s ~/.rvm/scripts/rvm ]]; then
-	source ~/.rvm/scripts/rvm
-fi
-
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
