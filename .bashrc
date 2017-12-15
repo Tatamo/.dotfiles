@@ -118,6 +118,8 @@ if [[ -s ~/.nvm/nvm.sh ]]; then
 	source ~/.nvm/nvm.sh
 fi
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # rbenv
 if [[ -d ~/.rbenv/ ]]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
