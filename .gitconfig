@@ -8,3 +8,5 @@
 	ff = false
 [pull]
 	ff = only
+[url "git@github.com:"]
+	Insteadof = https://github.com/
