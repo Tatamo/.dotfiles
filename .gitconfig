@@ -4,3 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = /home/tatamo/.gitignore
+[merge]
+	ff = false
+[pull]
+	ff = only
