@@ -113,6 +113,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# fbterm in CUI console
+case "$TERM" in
+    linux*) fbterm;;
+	*) ;;
+esac
+
 # nvm
 if [[ -s ~/.nvm/nvm.sh ]]; then
 	source ~/.nvm/nvm.sh
