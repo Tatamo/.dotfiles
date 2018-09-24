@@ -1,6 +1,6 @@
 for f in `ls -a | grep "^\.[^.]\+"`
 do
 	[[ "$f" == ".git" ]] && continue
-	ln -sfv $(pwd)/$f ~/
+	ln -siv $(pwd)/$f ~/
 done
 
