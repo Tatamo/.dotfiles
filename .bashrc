@@ -128,6 +128,9 @@ fi
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# ~/.local/bin
+export PATH="$HOME/.local/bin:$PATH"
+
 # rbenv
 if [[ -d ~/.rbenv/ ]]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
