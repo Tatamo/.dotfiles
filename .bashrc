@@ -121,24 +121,6 @@ case "$TERM" in
 	*) ;;
 esac
 
-# ssh-agent
-# http://mashi.exciton.jp/archives/250
-# https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login
-SSH_KEY_LIFE_TIME_SEC=3600
-SSH_ENV=$HOME/.ssh-agent
-function start_agent {
-    echo "Initialising new SSH agent..."
-    /usr/bin/ssh-agent -t $SSH_KEY_LIFE_TIME_SEC > $SSH_ENV
-    echo succeeded
-    chmod 600 $SSH_ENV
-    source $SSH_ENV > /dev/null 2>&1
-}
-if [ $( ps -ef | grep [s]sh-agent | wc -l ) -eq 0 ]; then
-	start_agent;
-elif [ -f "${SSH_ENV}" ] && [ -z "$SSH_AGENT_PID" ]; then
-    source $SSH_ENV > /dev/null 2>&1
-fi
-
 # nvm
 if [[ -s ~/.nvm/nvm.sh ]]; then
 	source ~/.nvm/nvm.sh
