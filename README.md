@@ -16,5 +16,3 @@ ln.shを実行することによって~/下にdotfilesのシンボリックリ�
 NeoBundleのインストール
 http://qiita.com/kazu0620/items/819679ef006d973c6c22
 
-Vimカラースキームの導入
-https://github.com/w0ng/vim-hybrid

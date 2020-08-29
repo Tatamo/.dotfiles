@@ -9,7 +9,6 @@ set shiftwidth=4
 set t_Co=256
 set background=dark
 
-colorscheme hybrid
 syntax on
 
 " template
@@ -66,7 +65,7 @@ augroup Processing
 	autocmd BufRead    *.pde NeoBundleSource vim-processing
 augroup END
 
-
+NeoBundle 'w0ng/vim-hybrid'
 
 call neobundle#end()
 
@@ -81,4 +80,4 @@ NeoBundleCheck
 " End Neobundle Settings.
 "-------------------------
 
-
+colorscheme hybrid
