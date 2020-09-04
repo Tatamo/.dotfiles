@@ -13,6 +13,4 @@ ln.shを実行することによって~/下にdotfilesのシンボリックリ�
 
 ## メモ
 ### dotfiles導入後にやること
-NeoBundleのインストール
-http://qiita.com/kazu0620/items/819679ef006d973c6c22
-
+[ansible-local-env](https://github.com/Tatamo/ansible-local-env)を走らせる
